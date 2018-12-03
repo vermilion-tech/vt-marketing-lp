@@ -1,5 +1,5 @@
 # README #
-The purpose of this project is to drive conversions for two primary calls-to-action -- Year-End Giving & CNN Heroes.
+The purpose of this project is to provide a boilerplate for quick marketing campaign landing pages.
 
 ### What is this repository for? ###
 
