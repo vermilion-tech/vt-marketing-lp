@@ -63,6 +63,7 @@ html, button, input, select, textarea {
     font-family: 'Nunito', sans-serif;
 }
 html, body {
+    background: #94183C;
     width: 100%;
 }
 
@@ -72,7 +73,6 @@ html, body {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background: #94183C;
 }
 
 /*
