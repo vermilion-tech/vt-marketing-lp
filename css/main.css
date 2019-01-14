@@ -72,6 +72,7 @@ html, body {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    background: #94183C;
 }
 
 /*
@@ -446,7 +447,7 @@ textarea {
   height: 10px;
   background-size: 20px 20px;
   background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #E7973C 13px);
+    radial-gradient(circle at 10px -5px, transparent 12px, #94183C 13px);
 }
 
 .fader::after {
@@ -459,7 +460,7 @@ textarea {
   height: 15px;
   background-size: 40px 20px;
   background-image:
-    radial-gradient(circle at 10px 15px, #E7973C 12px, transparent 13px);
+    radial-gradient(circle at 10px 15px, #94183C 12px, transparent 13px);
 }
 
 .wrapper-event {
@@ -473,7 +474,7 @@ textarea {
 }
 
 .uk-section-primary {
-  background: #cd7f32;
+  background: #94183C !important;
 }
 
 .section-event {
