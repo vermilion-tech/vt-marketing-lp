@@ -123,8 +123,10 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    margin: 0.83em 0;
-    font-size: 1.5em;
+  color: #E7973C !important;
+  margin: 1em 0;
+  font-size: 1.35em;
+  font-weight: bold;
 }
 h3 {
     color: #D65720 !important;
@@ -181,7 +183,7 @@ mark {
 * Addresses margins set differently in IE 6/7.
 */
 p, pre {
-    color: #E7973C;
+    color: #F2D99D;
     margin: 1em 0;
 }
 
@@ -461,7 +463,7 @@ textarea {
 }
 
 .wrapper-event {
-  border: 5px #D65720 dashed;
+  border: 5px #94183C solid;
   padding: 1.5em;
 }
 
