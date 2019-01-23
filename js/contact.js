@@ -1,4 +1,4 @@
-#hubspot_leadform$(document).ready(function () {
+$(document).ready(function () {
     $(function () {
         // when the form is submitted
         $('#hubspot_leadform').on('submit', function (e) {
@@ -28,7 +28,7 @@
                             // inject the alert to .messages div in our form
                             $('#hubspot_leadform').find('.messages').html(alertBox);
                             // empty the form
-                            $('#contact-form')[0].reset();
+                            $('#hubspot_leadform')[0].reset();
                         }
                     }
                 });
