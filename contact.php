@@ -17,7 +17,7 @@ $subject = 'Vermilion Tech: General Inquiry';
 $fields = array('firstname' => 'First Name', 'lastname' => 'Last Name', 'phone' => 'Phone', 'email' => 'Email', 'company' => 'Company');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Thanks for your interest! We will contact in less than 1 business day.';
+$okMessage = 'Your contact info has been submitted and we will be in touch shortly!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Sorry about that! Try again a little later.';
