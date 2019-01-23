@@ -58,12 +58,12 @@ html {
 * Addresses `font-family` inconsistency between `textarea` and other form
 * elements.
 */
-html, button, input, select, textarea {
+html, button, input, select, textarea, h1, h2, a {
     font-family: sans-serif;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif !important;
 }
+
 html, body {
-    background: #94183C;
     width: 100%;
 }
 
@@ -124,11 +124,20 @@ h1 {
     font-size: 2em;
 }
 h2 {
-  color: #E7973C !important;
+  color: #f0f0f0 !important;
   margin: 1em 0;
   font-size: 1.35em;
   font-weight: bold;
 }
+
+h2 a {
+  color: #D65720 !important;
+}
+
+h2 a:hover {
+  color: #E7973C !important;
+}
+
 h3 {
     color: #D65720 !important;
     margin: 1em 0;
@@ -184,7 +193,7 @@ mark {
 * Addresses margins set differently in IE 6/7.
 */
 p, pre {
-    color: #F2D99D;
+    color: #201a37 ;
     margin: 1em 0;
 }
 
@@ -277,11 +286,6 @@ Embedded content
 * 2. Improves image quality when scaled in IE 7.
 */
 
-img {
-    border: 2px #E7973C dashed; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
-}
-
 /*
 * Corrects overflow displayed oddly in IE 9.
 */
@@ -320,17 +324,6 @@ fieldset {
     border: 1px solid #c0c0c0;
 }
 
-/*
-* 1. Corrects color not being inherited in IE 6/7/8/9.
-* 2. Corrects text not wrapping in Firefox 3.
-* 3. Corrects alignment displayed oddly in IE 6/7.
-*/
-legend {
-    padding: 0;
-    border: 0; /* 1 */
-    white-space: normal; /* 2 */
-    *margin-left: -7px; /* 3 */
-}
 
 /*
 * 1. Corrects font size not being inherited in all browsers.
@@ -344,13 +337,6 @@ button, input, select, textarea {
     *vertical-align: middle; /* 3 */
 }
 
-/*
-* Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
-* the UA stylesheet.
-*/
-button, input {
-    line-height: normal
-}
 
 /*
 * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -388,25 +374,7 @@ input[type="checkbox"], input[type="radio"] {
     *width: 13px; /* 3 */
 }
 
-/*
-* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
-* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
-*    (include `-moz` to future-proof).
-*/
-input[type="search"] {
-    /* 2 */
-    box-sizing: content-box;
-    -webkit-appearance: textfield; /* 1 */
-    nowhitespace: afterproperty;
-}
 
-/*
-* Removes inner padding and search cancel button in Safari 5 and Chrome
-* on OS X.
-*/
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none
-}
 
 /*
 * Removes inner padding and border in Firefox 3+.
@@ -428,8 +396,9 @@ textarea {
 /* Pls ignore this sloppy CSS; converting to SASS later. */
 
 .fader, .uk-section-secondary {
-  background:
-    linear-gradient(to right, #372D59, #94183C);
+  background: #372D59;
+    /*linear-gradient(to right, #372D59, #94183C);*/
+
 }
 
 .fader {
@@ -447,7 +416,7 @@ textarea {
   height: 10px;
   background-size: 20px 20px;
   background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #94183C 13px);
+    radial-gradient(circle at 10px -5px, transparent 12px, #201a37 13px);
 }
 
 .fader::after {
@@ -460,11 +429,11 @@ textarea {
   height: 15px;
   background-size: 40px 20px;
   background-image:
-    radial-gradient(circle at 10px 15px, #94183C 12px, transparent 13px);
+    radial-gradient(circle at 10px 15px, #201a37 12px, transparent 13px);
 }
 
 .wrapper-event {
-  border: 5px #94183C solid;
+  border: 4px #201a37 double;
   padding: 1.5em;
 }
 
@@ -473,8 +442,8 @@ textarea {
   padding: 1em;
 }
 
-.uk-section-primary {
-  background: #94183C !important;
+html, .uk-section-primary {
+  background: #201a37 !important;
 }
 
 .section-event {
@@ -482,7 +451,7 @@ textarea {
 }
 
 .uk-navbar {
-  background: #E7973C;
+  background: /*#94183C*/ #fff;
   height: 4em;
   -webkit-box-shadow: 0px 2px 5px 0px black;
   -moz-box-shadow:    0px 2px 5px 0px black;
@@ -491,11 +460,11 @@ textarea {
 
 .uk-navbar-nav li a {
   color: #372D59;
-  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .uk-navbar-nav li a:hover, .uk-navbar-nav li a:active, .uk-navbar-nav li a:focus {
-  color: #94183C;
+  color: #E7973C;
 }
 
 /* Button fun */
@@ -506,20 +475,20 @@ textarea {
   position: relative;
   display: inline-block;
   padding: 10px 25px;
-  border-radius: .25em;
+  border-radius: .10em;
   background: linear-gradient(#E7973C, #D65720);
   text-transform: uppercase;
   color: #372D59 !important;
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 1px;
-  box-shadow: -6px 6px 0 #94183C;
+  box-shadow: -6px 6px 0 #201a37;
   text-decoration: none;
 }
 .btn:hover {
   top: 3px;
   left: -3px;
-  box-shadow: -3px 3px 0 #94183C;
+  box-shadow: -3px 3px 0 #201a37;
 }
 .btn:hover::after {
   top: 1px;
@@ -581,6 +550,135 @@ a:active.btn:after {
   background-size: 60%;
 }
 
+.uk-background-primary {
+  background: #372D59;
+}
+
 .uk-overlay-default {
   background-color: rgba(205, 127, 50, 0.8);
+}
+
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	width: calc(100%);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #E7973C;
+	color: #aaa;
+	font-weight: bold;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0;
+	width: 40%;
+	color: #fff;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1em;
+	width: 100%;
+}
+
+/* Form radness from Codrops, thank you, I love y'all. */
+/* Ichiro */
+.input--ichiro {
+	margin-top: 2em;
+}
+
+.input__field--ichiro {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 100;
+	display: block;
+	padding: 0;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	background: #fff;
+	color: #372D59;
+	opacity: 0;
+  text-indent: 1em;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.input__label--ichiro {
+	width: 100%;
+	text-align: left;
+	cursor: text;
+}
+
+.input__label--ichiro::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #372D59;
+  filter: brightness(80%);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__label-content--ichiro {
+	-webkit-transform-origin: 0% 190%;
+	transform-origin: 0% 190%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__field--ichiro:focus,
+.input--filled .input__field--ichiro {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.input__field--ichiro:focus + .input__label--ichiro::before,
+.input--filled .input__label--ichiro::before {
+	-webkit-transform: scale3d(1, 1.5, 1);
+	transform: scale3d(1, 1.5, 1);
+}
+
+.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
+.input--filled .input__label-content--ichiro {
+	-webkit-transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1);
+	transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 }
